@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maze</title>
+    <style>
+
+        .maze{
+            margin-top:100px;
+            margin-bottom:100px;
+            margin-left:15px;
+            align-items:center;
+            justify-content:center;
+        }
+        .path{
+            display:inline-block;
+            color: green;
+            height: 15px;
+            width: 15px;
+            background-color: black;
+
+        }
+        .wall{
+
+            display:inline-block;
+            color: solid black;
+            height: 15px;
+            width: 15px;
+            background-color:red;
+
+        }
+        .b{
+            position:relative;
+            left:740px;
+            bottom:40px;
+            color:gold;
+            background-color: grey;
+            font-size:20px;
+
+        }
+<!--        .p{-->
+<!--            margin-top:0px;-->
+<!--        }-->
+</style>
+</head>
+
+<body style = "border:5px solid grey;border-radius:10px;margin:15px;background-color:black;padding-top:20px;">
+    <h1 style="color:white;text-align:center;">GENERATED MAZE</h1>
+    <div class="maze">
+    {% for i in mz %}
+        {% for j in i %}
+            {% if j == 'c' %}
+                <div class="path"></div>
+            {% else %}
+                <div class="wall"></div>
+            {% endif %}
+        {% endfor %}
+        <br>
+    {% endfor %}
+    </div>
+        <a href="/"><Button class="b" type="submit"><b >HOME</b></Button></a>
+
+
+
+</body>
+</html>

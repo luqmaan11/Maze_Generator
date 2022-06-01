@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+    margin:0px;
+    padding:0px;
+    }
+
+
+.navbar{
+<!--        background-color:red;-->
+        border:2px solid black;
+        opacity:0.9;
+ position: fixed;
+  top: 0;
+  width:100%;
+
+    }
+    .navitems{
+        display:flex;
+        background-color:black;
+    }
+
+    .navitems li{
+        list-style:none;
+        margin: 15px;
+        font-size:24px;
+        color:white;
+    }
+    .navitems li a{
+        text-decoration:none;
+        color:white;
+    }
+    .navitems li a:hover{
+        text-decoration:underline;
+        color:grey;
+    }
+
+body {
+
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding:16px;
+  text-align:center;
+
+}
+
+.container::after, .row::after {
+   margin-top:10px;
+  content: "";
+  clear: both;
+  display: table;
+  text-align:center;
+}
+
+.title {
+  color: grey;
+}
+footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 30px;
+      background-color: gray;
+      color: white;
+      padding-top: 10px;
+      text-align: center;
+
+    }
+
+
+<!--@media screen and (max-width: 650px) {-->
+<!--  .column {-->
+<!--    width: 100%;-->
+<!--    display: block;-->
+<!--  }-->
+<!--}-->
+</style>
+</head>
+
+<body>
+<nav class="navbar">
+   <ul class="navitems">
+       <li><a href="/">Home</a></li>
+       <li><a href="/project">Project</a></li>
+       <li><a href="/about">About</a></li>
+   </ul>
+</nav>
+
+
+<div class="about-section">
+    <br>
+  <h1>  TEAM DEMI DEMI </h1>
+  <p>Code is like humor. When you have to explain it, it’s bad</p>
+<!--  <p></p>-->
+</div><br>
+
+<h2 style="text-align:center">Our Team</h2><br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+<!--      <img src="" alt="mk" style="width:100%">-->
+      <div class="container">
+        <h2>Mohammed Luqmaan</h2>
+          <br>
+        <p class="title">1CR19CS094</p><br>
+<!--        <p></p>-->
+        <p>molu19cs@cmrit.ac.in</p>
+          <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+<!--      <img src="" alt="nb" style="width:100%">-->
+      <div class="container">
+        <h2>Mridul Iyer</h2><br>
+        <p class="title">1CR19CS098</p><br>
+<!--        <p></p>-->
+        <p>mriy19cs@cmrit.ac.in</p>
+          <br>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+<!--      <img src="" alt="mb" style="width:100%">-->
+      <div class="container">
+        <h2>Mohammed Zakriah Ibrahim</h2><br>
+        <p class="title">1CR19CS095</p><br>
+<!--        <p></p>-->
+        <p>mozi19cs@cmrit.ac.in</p>
+          <br>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+    <p>Copyright &copy; 2021 All Rights reserved.</p>
+  </footer>
+</body>
+</html>

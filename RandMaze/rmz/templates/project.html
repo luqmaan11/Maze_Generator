@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Working</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <style>
+    *{
+    margin:0px;
+    padding:0px;
+    }
+
+        body {
+            width: 100%;
+            height: 500px;
+            background: url(/static/image/bgw2.jpg);
+            background-size: cover;
+
+            background-repeat: no-repeat;
+        }
+
+        form {
+            margin-top: 170px;
+        }
+
+        *body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Baloo Bhaina 2', cursive;
+        }
+    .navbar{
+<!--        background-color:red;-->
+        border:2px solid black;
+        opacity:0.9;
+ position: fixed;
+  top: 0;
+  width:100%;
+
+    }
+    .navitems{
+        display:flex;
+        background-color:black;
+    }
+
+    .navitems li{
+        list-style:none;
+        margin: 15px;
+        font-size:24px;
+        color:white;
+    }
+    .navitems li a{
+        text-decoration:none;
+        color:white;
+    }
+    .navitems li a:hover{
+        text-decoration:underline;
+        color:grey;
+    }
+        .form-details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 400px;
+            border: 0px solid gray;
+            border-radius: 15px;
+            margin: auto;
+            background-color: #f7f7ef;
+        }
+
+        .take {
+            margin-left: 2px;
+        }
+
+        .abtn {
+            width: 80px;
+            height: 35px;
+            background-color: crimson;
+            color: white;
+            border: none;
+            margin-left:70px;
+        }
+
+        .Gbtn {
+            width: 80px;
+            height: 35px;
+            background-color: crimson;
+            color: white;
+            border: none;
+        }
+        footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 30px;
+      background-color: gray;
+      color: white;
+      padding-top: 10px;
+      text-align: center;
+
+    }
+    </style>
+</head>
+
+<body>
+<nav class="navbar">
+   <ul class="navitems">
+       <li><a href="/">Home</a></li>
+       <li><a href="/project">Project</a></li>
+       <li><a href="/about">About</a></li>
+   </ul>
+</nav>
+    <form action='/result' method='get'>
+        <div class="form-details">
+            <div class="form-container" style="align-items:center; justify-content:center;">
+                <h2 style="margin-bottom:20px;">Enter details of maze</h2>
+                <label for="h"><b>Height:&nbsp;&nbsp;</b> </label>
+                <input name="H" id="h" class="take" type="text" placeholder="Enter height" required><br><br>
+
+                <label for="w"><b>Width:&nbsp;&nbsp;</b> </label>
+                <input name="W" id="w" class="take" type="text" placeholder="Enter width" required><br><br>
+
+
+
+
+
+
+                <Button class="abtn" type="submit"><b>Generate</b></Button>
+            </div>
+        </div>
+
+    </form>
+<footer>
+    <p>Copyright &copy; 2021 All Rights reserved.</p>
+  </footer>
+</body>
+
+</html>
